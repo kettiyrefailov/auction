@@ -71,9 +71,8 @@ const CustomersList = (props) => {
     const handleNewBalanceChange = (e) => {
         let isNum = /^[+-]?\d+(\.\d+)?$/.test(e.target.value);
         if (isNum&&!e.target.value.includes('-')) {
-            if (e.target.value.toString().split('.')[1].length <= 2) {
                 setNewBalance(e.target.value)
-            }
+
         }
     }
 
